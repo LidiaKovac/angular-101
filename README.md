@@ -1,27 +1,13 @@
-# Angular101
+# Angular 101 💽
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.11.
+Hi! My name is Lidia 👋
 
-## Development server
+If you have just stumpled upon this repo while going through my GitHub, welcome! This repo is part of a "series" of 101s.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+I am a MERN Stack developer and Teaching Assistant at EPICODE. I specialize in MongoDB (+ Postgres), Express.js, React.js and Node.js.
 
-## Code scaffolding
+As part of autonomous research, I am trying out different things. You can find a list of what I have explored so far and what I plan to try next on my GitHub page.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This is the repository for the basics of creating an Angular Application. I followed EPICODE's lessons to create it.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Do you have feedback? Do not hesitate! Coding is all about always learning something new!
