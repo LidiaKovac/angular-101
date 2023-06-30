@@ -1,0 +1,16 @@
+<!-- <form (submit)="submitPost($event)">
+  <label for="title" >Title: </label>
+  <input type="text" name="title" [(ngModel)]="title">
+  <label for="body">Content: </label>
+  <textarea name="body" [(ngModel)]="body" cols="30" rows="10"></textarea>
+</form> -->
+
+<form [formGroup]="newPost" (ngSubmit)="submitPost(newPost)">
+  <input type="text" formControlName="title">
+  <textarea formControlName="body"></textarea>
+  <input type="checkbox" formControlName="active" [checked]="newPost.value.active">
+  <button [disabled]="newPost.invalid">Submit</button>
+</form>
+
+<h1>{{newPost.value.title}}</h1>
+<p>{{newPost.value.body}}</p>

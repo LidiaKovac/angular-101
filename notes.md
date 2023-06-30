@@ -31,12 +31,13 @@
     - we create a new interface for "User". The interface will be empty, so we need to give it a structure
     ```ts
     export default interface User {
-      name: string
-      status: string
+      name: string;
+      status: string;
     }
     ```
   - `ng generate @schematics/angular:service service/user` => Creates a new service for the User, can be done with extension
     - Service needs to create the user, push it in the array, update the user when we click on buttons (will handle CRUD)
+
 ---
 
 - **Files**:
@@ -59,6 +60,7 @@
   - **{{}}** => interpolation
   - two way data binding => data comes from the page, gets manipulates and output again
     - vedi form-example.component.html
+    -
 
 - **Form Handling** =>
   - in order to send something from html forms to the users component we need both components to know the structure of users
@@ -69,6 +71,15 @@
   - con [nomeProp] inseriamo una proprieta' @Input
   - con (click) si chiamano eventi, le funzioni devono essere nel componente ts
   - [(ngModel)] collega l'input ad una variabile del componente
+  - Interazione con figlio:
+    `@ViewChild(ChildComponent, {static: true})`
+    `figlio!: ChildComponent`
+    `<app-child #figlio></app-child>`
+    `# figlio recupera l'istanza del componente
+    Static => means the ChildComponent should NOT be changed
+    `<ng-content select='.card-title'></ng-content>`
+    This allows to show only the value of an element through classes
+    Injects the content of a parent component in the child component => prop drilling in React
 
 - Services => erogano metodi se devono essere usati da piu' componenti, solitamente collegato a un form
 
@@ -78,3 +89,20 @@
 
   - Il tasto back non funziona
   - no url comunicabile, tutto su /
+
+-Lifecycles in ordine (ricorda di metterli nell'Implements)
+  - ngOnChanges(changes:SimpleChanges) 
+  - ngOnInit
+  - ngDoCheck
+
+- Missing things: 
+  - routing
+  - ngContent
+  - ngStyle e ngClass
+
+- Domande: 
+  - i service quindi sono aggiornati in modo costante? 
+  - come posso creare un componente "singolo" di un loop se crea un div extra (es. riga di una tabella)
+  - diff component e module 
+    component => funzionale 
+    module => importa qualcosa e lo mette a disposizione

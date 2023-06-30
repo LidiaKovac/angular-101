@@ -1,0 +1,26 @@
+<div class="container">
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Content</th>
+        <!-- <th scope="col">Active</th> -->
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr *ngFor="let post of posts">
+        <td>{{post.id}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.body.slice(0, 100) + "..."}}</td> -->
+        <!-- <td>{{post.active ? "✅" : "❌"}}</td> -->
+        <!-- <td><button class="btn btn-danger" (click)="hidePost(post.id)">HIDE</button></td>
+      </tr> -->
+
+      <app-single-post-row [post]="post" *ngFor="let post of posts"></app-single-post-row>
+    </tbody>
+  </table>
+
+</div>

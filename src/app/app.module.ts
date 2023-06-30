@@ -1,20 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { FormExampleComponent } from './form-example/form-example.component';
-import { UserListComponent } from './user-list/user-list.component';
-import { SingleUserComponent } from './single-user/single-user.component';
+import { PostFormComponent } from './components/post-form/post-form.component';
+import { PostListComponent } from './components/post-list/post-list.component';
+import { SinglePostRowComponent } from './components/single-post-row/single-post-row.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormExampleComponent,
-    UserListComponent,
-    SingleUserComponent
+
+    PostFormComponent,
+     PostListComponent,
+     SinglePostRowComponent,
+
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule, FormsModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
